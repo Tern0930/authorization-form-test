@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import MyInput from "./components/UI/input/MyInput";
+import './styles/App.css'
+import AuthorizationForm from "./components/AuthorizationForm";
 
 function App() {
+
+    const [userRequisites, setUserRequisites] = useState({email: '', password: ''});
+    const [messages, setMessages] = useState({emailMessage: '', passwordMessage: ''});
+
+    function signIn() {
+        console.log(`User email: '${userRequisites.email}', password: '${userRequisites.password}' is signing in.`);
+        setUserRequisites({...userRequisites, password: ''});
+    }
+
+    function signUp() {
+        console.log(`User email: '${userRequisites.email}', password: '${userRequisites.password}' is signing up.`);
+    }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <AuthorizationForm
+            userRequisites={userRequisites}
+            setUserRequisites={setUserRequisites}
+            signIn={signIn}
+            signUp={signUp}
+            messages={messages}
+            setMessages={setMessages}
+        />
     </div>
   );
 }
