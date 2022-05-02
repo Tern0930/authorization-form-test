@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/authorization-form-test/static/css/main.5b42ee1b.css",
+    "main.js": "/authorization-form-test/static/js/main.83224003.js",
+    "index.html": "/authorization-form-test/index.html",
+    "main.5b42ee1b.css.map": "/authorization-form-test/static/css/main.5b42ee1b.css.map",
+    "main.83224003.js.map": "/authorization-form-test/static/js/main.83224003.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b42ee1b.css",
+    "static/js/main.83224003.js"
+  ]
+}
