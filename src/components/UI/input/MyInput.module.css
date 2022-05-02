@@ -1,0 +1,13 @@
+.myInput {
+    width: 100%;
+    padding: .4em .8em;
+    border: 2px solid dodgerblue;
+    font-size: 1em;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 4%;
+}
+
+.error {
+    border-color: red;
+}

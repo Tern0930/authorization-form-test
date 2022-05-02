@@ -1,0 +1,20 @@
+.myBtn {
+    padding: .4em 1.6em;
+    font-size: 1em;
+    color: dodgerblue;
+    background-color: white;
+    border: 2px solid dodgerblue;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.myBtn:hover {
+    border-color: deepskyblue;
+    color: deepskyblue;
+}
+
+.myBtn:active {
+    color: dodgerblue;
+    border-color: dodgerblue;
+}

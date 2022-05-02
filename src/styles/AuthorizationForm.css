@@ -1,0 +1,24 @@
+.myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background-color: white;
+    padding: 4% 4%;
+    border-radius: 16px;
+    border: 2px solid dodgerblue;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.title {
+    color: dodgerblue;
+    margin-bottom: 4%;
+}
